@@ -1,0 +1,327 @@
+:root{
+    --main-font:'Dancing Script', cursive;
+    --main-color: #DDAC62;
+}
+
+.navbar .container .brand{
+    font-size: 2rem;
+    font-weight: 600;
+}
+.navbar .navbar-nav .nav-item a{
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: white;
+}
+
+#home .container .row .description h1{
+    font-family: var(--main-font);
+    color: var(--main-color);
+    font-size: 6rem;
+    
+}
+#home .container .row .description span{
+    letter-spacing: 0.9rem;
+    font-weight: 500;
+
+}
+#home .container .row .description span::after{
+    content: " |";
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: var(--main-color);
+    animation-name: typing;
+    animation-duration:7s;
+    animation-iteration-count: infinite;
+    
+}
+@keyframes typing{
+    0%{content: "N|";}
+    2%{content: "NO|";}
+    3%{content: "NOT|";}
+    4%{content: "NOTE|";}
+    6%{content: "NOTEBOOK|";}
+    8%{content: "NOTEBOO|";}
+    10%{content: "NOTEBO|";}
+    12%{content: "NOTEB|";}
+    14%{content: "NOTE|";}
+    16%{content: "NOT|";}
+    18%{content: "NO|";}
+    20%{content: "N|";}
+    22%{content: "O|";}
+    24%{content: "OR |";}
+    26%{content: "ORG|";}
+    28%{content: "ORGA|";}
+    30%{content: "ORGAN|";}
+    32%{content: "ORGANI|";}
+    34%{content: "ORGANIZ|";}
+    36%{content: "ORGANIZE|";}
+    38%{content: "ORGANIZER|";}
+    40%{content: "ORGANIZE|";}
+    43%{content: "ORGANIZ|";}
+    46%{content: "ORGANI|";}
+    49%{content: "ORGAN|";}
+    52%{content: "ORGA|";}
+    55%{content: "ORG|";}
+    58%{content: "OR|";}
+    61%{content: "O|";}
+    64%{content: "S|";}
+    67%{content: "SK|";}
+    70%{content: "SKE";}
+    73%{content: "SKET|";}
+    76%{content: "SKETC|";}
+    79%{content: "SKETCH";}
+    82%{content: "SKETC|";}
+    85%{content: "SKET|";}
+    88%{content: "SKE|";}
+    91%{content: "SK|";}
+    94%{content: "SK|";}
+    97%{content: "S|";}
+    100%{content: "|";}
+    
+}
+#home .container .row .description p{
+    color: white;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+#home .icon{
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: black;
+    color: white;
+    
+}
+#home .icon:hover{
+    background-color: white;
+    color: black;
+    
+}
+#home .container .row .product img{
+   border-radius: 5rem;
+}
+#home .container .row .product{
+    position: relative;
+    z-index: 4;
+    display: flex;
+    
+}
+#home .container .row .product::after{
+    content: "";
+    width: 75%;
+    height: 100%;
+    background-image: url(../imgs/page.PNG);
+    background-size: cover;
+    position: absolute;
+    background-repeat: no-repeat;
+    border-radius: 5rem;
+    left: 10%;
+    top: 5%;
+    bottom: 50%;
+    z-index: -1;
+
+}
+
+#about .container .row .title h2{
+    color: var(--main-color);
+    font-family: var(--main-font);
+    font-weight: 800;
+    font-size: 4rem;
+    position: relative;
+    
+}
+#about .container .row .title h2::after{
+    content: "";
+    width: 90%;
+    bottom: 0;
+    right: 0%;
+    left: 0%;
+    
+    height: 6px;
+    background-color: black;
+    position: absolute;
+}
+
+#about .container .row .logo img{
+    border-radius: 5rem;
+}
+#about .container .row .logo{
+    position: relative;
+    z-index: 4;
+    display: flex;
+    
+}
+#about .container .row .logo::after{
+    content: "";
+    width: 75%;
+    height: 100%;
+    background-image: url(../imgs/page.PNG);
+    background-size: cover;
+    position: absolute;
+    background-repeat: no-repeat;
+    border-radius: 5rem;
+    left: -10%;
+    top: 5%;
+    bottom: 30%;
+    z-index: -1;
+
+}
+#about .container .row .aboutus h3{
+    font-family: var(--main-font);
+    font-size: 3rem;
+    font-weight: 500;
+}
+#products .container .row .title h2{
+    color: var(--main-color);
+    font-family: var(--main-font);
+    font-weight: 800;
+    font-size: 4rem;
+    position: relative;
+}
+#products .container .row .title h2::after{
+    content: "";
+    width: 90%;
+    bottom: 0;
+    right: 0%;
+    left: 0%;
+    
+    height: 6px;
+    background-color: black;
+    position: absolute;
+}
+
+
+#products .container .row .nav-btns{
+    border: none;
+    color: black;
+    font-weight: 700;
+    font-size: 1.2rem;
+    
+}
+
+#products .card .card-img .social{
+    background-color: white;
+    background-color: rgb(255, 255, 255);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition-duration: 1s;
+    overflow: hidden;
+    
+}
+#products .card .card-img .social:hover{
+    opacity: 1;
+    border:transparent
+    
+}
+
+#founder .container .row .title h2{
+    color: var(--main-color);
+    font-family: var(--main-font);
+    font-weight: 800;
+    font-size: 4rem;
+    
+   
+}
+
+#founder .container .row .aboutfounder h3{
+    font-family: var(--main-font);
+    font-size: 3rem;
+    font-weight: 500;
+    position: relative;
+    
+
+}
+#founder .container .row .aboutfounder h3::after{
+    content: "";
+    width: 40%;
+    bottom: 0;
+    right: 0%;
+    left: 0%;
+    
+    height: 6px;
+    background-color: var(--main-color);
+    position: absolute;
+}
+
+
+
+
+#founder .container .row .aboutfounder p{
+    font-size: 1.1rem;
+
+}
+
+
+#contact .container .row .title h2{
+    font-family: var(--main-font);
+    color: var(--main-color);
+    font-weight: 800;
+    font-size: 4rem;
+    position: relative;
+    
+
+}
+#contact .container .row .title h2::after{
+    content: "";
+    width: 90%;
+    bottom: 0;
+    right: 0%;
+    left: 0%;
+    height: 6px;
+    background-color: black;
+    position: absolute;
+}
+
+
+
+#contact .container .row .cont-way .cont-icon i{
+    width: 4rem;
+    height: 4rem;
+    background-color: #f4f4f4;
+    border-radius: 6rem;
+}
+#contact .row .cont-way .cont-icon .icon:hover{
+    background-color: black;
+    color: white;
+    
+}
+#contact .row .cont-way h6{
+    
+    font-weight: 500;
+}
+#contact .row .cont-way p{
+    font-family: var(--third-font);
+    color: #748182;
+
+}
+#contact .row button{
+    width: 8rem;
+    height: 2.5rem;
+    font-size: 1rem;
+    background-color: black;
+    color: white;
+}
+#contact .row button:hover{
+    background-color: white;
+    color: black;
+}
+
+#contact .row .inputs input{
+    border-radius: 0.5rem;
+    border: none;
+    background-color:rgb(224,224,244);
+    height: 3rem;
+    outline: none;
+}
+
+#contact .row .inputs textarea{
+    border-radius: 0.5rem;
+    border: none;
+    outline: none;
+    background-color:rgb(224,224,244);
+}
+
